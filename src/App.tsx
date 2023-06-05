@@ -15,7 +15,9 @@ import {
 import { BigNumber, utils } from "ethers";
 import { useMemo, useState } from "react";
 import { HeadingImage } from "./components/HeadingImage";
-import { PoweredBy } from "./components/PoweredBy";
+
+import { Container } from "./components/Container";
+
 import { useToast } from "./components/ui/use-toast";
 import { parseIneligibility } from "./utils/parseIneligibility";
 import {
@@ -279,7 +281,7 @@ export default function Home() {
           />
         </div>
         <div className="col-span-1 flex h-full w-full items-center justify-center lg:col-span-7">
-          <div className="flex w-full max-w-xl flex-col gap-4 rounded-xl p-12 lg:border lg:border-gray-400 lg:dark:border-gray-800">
+          <div className="flex w-full max-w-xl flex-col gap-4 rounded-xl p-12 lg:border lg:border-black lg:dark:border-black">
             <div className="mt-8 flex w-full xs:mb-8 xs:mt-0 lg:hidden">
               <HeadingImage
                 src={contractMetadata.data?.image || firstNft?.metadata.image}
@@ -299,7 +301,7 @@ export default function Home() {
                 </div>
               ) : (
                 <p>
-                  <span className="text-lg font-bold tracking-wider text-gray-500 xs:text-xl lg:text-2xl">
+                  <span className="text-lg font-bold tracking-wider text-white xs:text-xl lg:text-2xl">
                     {numberClaimed}
                   </span>{" "}
                   <span className="text-lg font-bold tracking-wider xs:text-xl lg:text-2xl">
@@ -324,7 +326,7 @@ export default function Home() {
               </h1>
               {contractMetadata.data?.description ||
               contractMetadata.isLoading ? (
-                <div className="line-clamp-2 text-gray-500">
+                <div className="line-clamp-2 text-white">
                   {contractMetadata.isLoading ? (
                     <div
                       role="status"
@@ -355,7 +357,7 @@ export default function Home() {
               ) : (
                 <div className="flex w-full flex-col gap-4">
                   <div className="flex w-full flex-col gap-4 lg:flex-row lg:items-center lg:gap-4 ">
-                    <div className="flex h-11 w-full rounded-lg border border-gray-400 px-2 dark:border-gray-800 md:w-full">
+                    <div className="flex h-11 w-full rounded-lg border border-black px-2 dark:border-gray-800 md:w-full">
                       <button
                         onClick={() => {
                           const value = quantity - 1;
@@ -457,8 +459,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Container />
       </div>
-      <PoweredBy />
+       
     </div>
   );
 }

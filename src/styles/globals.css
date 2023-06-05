@@ -22,6 +22,14 @@
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
   }
+  .bg-gradient-rainbow {
+    background-image: linear-gradient(
+        to right,
+        #FAB1A0 0%,   /* Pink 300 in Tailwind CSS */
+        #6C5CE7 50%,  /* Purple 300 in Tailwind CSS */
+        #5F27CD 100%  /* Indigo 400 in Tailwind CSS */
+    );
+  }
 }
 
 html,
@@ -45,7 +53,7 @@ html {
   color-scheme: dark;
 }
 body {
-  @apply min-h-screen-safe bg-white dark:bg-black text-black dark:text-white;
+  @apply bg-white text-white min-h-screen-safe dark:bg-black dark:text-white;
 }
 
 @layer base {
@@ -84,6 +92,7 @@ body {
 
   .dark {
     --background: 224 71% 4%;
+    /* --background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);  */
     --foreground: 213 31% 91%;
 
     --muted: 223 47% 11%;
@@ -121,7 +130,8 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-rainbow text-foreground;
+    /* @apply bg-background text-foreground; */
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }

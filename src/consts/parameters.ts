@@ -2,7 +2,8 @@
 
 // Your smart contract address (available on the thirdweb dashboard)
 // For existing collections: import your existing contracts on the dashboard: https://thirdweb.com/dashboard
-export const contractConst = "0x436492DBc2E30E56FaC8F2297BD1964833c0687d";
+// export const contractConst = "0x436492DBc2E30E56FaC8F2297BD1964833c0687d";
+export const contractConst = "0x448050BbaAFC5eBc2B0a4014848e93a3D970D940";
 
 // The name of the chain your contract is deployed to.
 // Provide a string for standard chains, or import one from @thirdweb-dev/chains package.
@@ -10,10 +11,10 @@ export const contractConst = "0x436492DBc2E30E56FaC8F2297BD1964833c0687d";
 export const chainConst = "mumbai";
 
 // Configure the primary color for buttons and other UI elements
-export const primaryColorConst = "white";
+export const primaryColorConst = "cyan";
 
 // Choose between "light" and "dark" mode
-export const themeConst = "dark";
+export const themeConst = "light";
 
 // Gasless relayer configuration options
 export const relayerUrlConst = ""; // OpenZeppelin relayer URL

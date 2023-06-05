@@ -4,6 +4,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
   theme: {
     screens: {
       xs: "550px",
@@ -21,6 +22,18 @@ module.exports = {
       },
     },
     extend: {
+      backgroundGradientColors: {
+        rainbow: [
+          "#ff0000",
+          "#ff7f00",
+          "#ffff00",
+          "#00ff00",
+          "#0000ff",
+          "#4b0082",
+          "#8b00ff",
+        ],
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
