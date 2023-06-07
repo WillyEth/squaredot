@@ -272,6 +272,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-screen">
+    
       <ConnectWallet className="!absolute !right-4 !top-4" theme={theme} />
       <div className="grid h-screen grid-cols-1 lg:grid-cols-12">
         <div className="hidden h-full w-full items-center justify-center lg:col-span-5 lg:flex lg:px-12">
@@ -461,7 +462,6 @@ export default function Home() {
         </div>
         <Container />
       </div>
-       
     </div>
   );
 }
