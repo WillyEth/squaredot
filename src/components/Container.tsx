@@ -21,7 +21,7 @@ export const PoweredBy: React.FC = () => {
       className="flex cursor-pointer items-center"
     >
       <span className="px-2 text-xl text-white">Powered by</span>
-      <img src={myImage} alt="My Logo" width="32" height="32" />
+      <img src={myImage} alt="My Logo" width="30" height="30" />
     </div>
   );
 };
@@ -38,7 +38,7 @@ export const AuditBy: React.FC = () => {
       className="flex cursor-pointer items-center"
     >
       <span className="px-2 text-xl text-white">Audit</span>
-      <img src={verifiedImage} alt="Verified" width="32" height="32" />{" "}
+      <img src={verifiedImage} alt="Verified" width="30" height="30" />{" "}
       {/* Adjust width and height to your needs */}
     </div>
   );
@@ -53,7 +53,7 @@ export const OpenSea: React.FC = () => {
       className="flex cursor-pointer items-center"
     >
       <span className="px-2 text-xl text-white">OpenSea</span>
-      <img src={openseaLogo} alt="OpenSea Logo" width="32" height="32" />
+      <img src={openseaLogo} alt="OpenSea Logo" width="30" height="30" />
     </div>
   );
 };
